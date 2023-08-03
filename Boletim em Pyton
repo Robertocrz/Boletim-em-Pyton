@@ -1,0 +1,17 @@
+pessoa= dict()
+soma = 0
+cont = 1
+
+while True:
+    pessoa['nome'] = str(input('Digite nome do aluno :'))  #inicio do codigo para nome do aluno
+
+
+    while (cont <=4):
+        x=float(input('Digite a {} nota :' .format(cont))) # valores das notas
+        soma = soma + x
+        cont = cont + 1
+    media = soma / 4                                       # soma e divisão das notas gerando média
+    if media >= 7 and media <=10:
+         print('Media : {}. Aluno Aprovado!' .format(media))
+    else:
+         print('Media : {}. Aluno reprovado!'.format(media))
